@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Gossip-Mongers-Android-SDK-master.iml" filepath="$PROJECT_DIR$/.idea/modules/Gossip-Mongers-Android-SDK-master.iml" group="Gossip-Mongers-Android-SDK-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Gossip-Mongers-Android-SDK-master/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobicomkit/mobicomkit.iml" filepath="$PROJECT_DIR$/.idea/modules/mobicomkit/mobicomkit.iml" group="Gossip-Mongers-Android-SDK-master/mobicomkit" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobicomkitui/mobicomkitui.iml" filepath="$PROJECT_DIR$/.idea/modules/mobicomkitui/mobicomkitui.iml" group="Gossip-Mongers-Android-SDK-master/mobicomkitui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mobicommons/mobicommons.iml" filepath="$PROJECT_DIR$/.idea/modules/mobicommons/mobicommons.iml" group="Gossip-Mongers-Android-SDK-master/mobicommons" />
+    </modules>
+  </component>
+</project>

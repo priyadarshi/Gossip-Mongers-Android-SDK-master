@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#ffff</color>
+    <color name="scrollview_background">#FD6C41</color>
+    <color name="buttonbgcolor">@color/holo_blue</color>
+    <color name="textbuttoncolor">#ffffff</color>
+    <color name="white">#fff</color>
+
+</resources>

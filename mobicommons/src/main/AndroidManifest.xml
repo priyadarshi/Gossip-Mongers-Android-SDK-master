@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.gossipmongers.mobicommons"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application>
+        <provider
+            android:authorities="${applicationId}.applozic.provider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            android:name="com.gossipmongers.mobicommons.file.ALFileProvider"
+            tools:node="merge">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/applozic_provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gossipmongers.mobicomkit.sample">
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <application
+        android:name="com.gossipmongers.mobicomkit.sample.ApplozicSampleApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/ApplozicTheme"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="com.gossipmongers.mobicomkit.sample.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="@string/ecommerce"
+            android:theme="@style/MobiComAppBaseTheme" />
+
+        <activity
+            android:name="com.gossipmongers.mobicomkit.sample.SampleActivity"
+            android:configChanges="keyboardHidden|screenSize|smallestScreenSize|screenLayout|orientation"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.gossipmongers.mobicomkit.sample.MainActivity"
+            android:theme="@style/ApplozicTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gossipmongers.mobicomkit.sample.MainActivity" />
+        </activity>
+
+        <activity
+            android:name="com.gossipmongers.mobicomkit.sample.SplashScreenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.gossipmongers.mobicomkit.sample.LoginActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="adjustPan" />
+
+        <meta-data
+            android:name="com.gossipmongers.loginActivity"
+            android:value="com.applozic.mobicomkit.sample.LoginActivity" />
+
+        <service
+            android:name="com.gossipmongers.mobicomkit.sample.pushnotification.FcmListenerService"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.gossipmongers.application.key"
+            android:value="@string/application_key" />
+        <meta-data
+            android:name="com.gossipmongers.server.url"
+            android:value="@string/default_server_url" />
+        <meta-data
+            android:name="com.gossipmongers.mqtt.server.url"
+            android:value="@string/default_mqtt_server_url" />
+        <meta-data
+            android:name="main_folder_name"
+            android:value="@string/default_media_location_folder"
+            tools:node="replace" />
+        <meta-data
+            android:name="com.gossipmongers.take.order.userId"
+            android:value="@string/take_order_userid" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.package.name"
+            android:value="${applicationId}" />
+        <meta-data
+            android:name="com.gossipmongers.mobicomkit.uiwidgets.toolbar.tap.activity"
+            android:value="com.applozic.mobicomkit.sample.MainActivity" />
+        <meta-data
+            android:name="activity.open.on.call.button.click"
+            android:value="com.applozic.mobicomkit.sample.MainActivity" />
+    </application>
+
+</manifest>
